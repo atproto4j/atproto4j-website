@@ -1,16 +1,31 @@
 {
   "name": "atproto4j-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
+    "dev:verbose": "astro dev --verbose",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "info": "astro info",
+    "ncu": "ncu",
+    "ncu:upgrade": "ncu --upgrade --filterVersion '^*'",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
   },
   "dependencies": {
-    "astro": "^5.0.0-beta.12",
     "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^5.0.0-beta.12",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "del-cli": "^6.0.0",
+    "npm-check-updates": "^17.1.11",
+    "prettier": "^3.4.1",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }
